@@ -1,0 +1,23 @@
+---
+const { title } = Astro.props;
+---
+
+<html data-theme="retro" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title} | Thoughts by zeu.dev</title>
+	</head>
+	<body class="flex flex-col w-full h-full min-w-screen min-h-screen bg-neutral text-neutral-content">
+    <nav class="flex flex-row justify-between w-full h-fit p-4">
+      <a href="/" class="btn btn-ghost normal-case text-2xl">thoughts.zeu.dev</a>
+      <a href="https://zeudev.vercel.app" class="btn btn-secondary">about</a>
+    </nav>
+
+    <main class="flex flex-col w-full h-full p-8 gap-8 items-center">
+      <slot />
+    </main>
+	</body>
+</html>

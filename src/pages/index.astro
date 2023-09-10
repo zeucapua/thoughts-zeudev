@@ -1,0 +1,15 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import BlogCard from "../components/BlogCard.astro";
+
+const blogs = await getCollection("blog", ({ data }) => {
+  return data.draft === false;
+});
+---
+
+<BaseLayout title="Home">
+  <h1 class="text-3xl text-secondary font-bold">Blog Posts</h1>
+
+  { blogs.map((blog) => <BlogCard {blog} />) }
+</BaseLayout>

@@ -1,0 +1,24 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+
+const { title, description, date, link } = Astro.props;
+---
+
+<BaseLayout title={title + " | The Thinks"}>
+
+  <section class="flex flex-col gap-4 items-center">
+    <h1 class="text-3xl lg:text-5xl font-bold text-center">{title}</h1>
+    <h3 class="text-lg lg:text-xl font-bold italic">{description}</h3>
+    <div class="flex flex-col lg:flex-row items-center gap-4">
+      <p>
+        Written by <a href="https://zeudev.vercel.app" class="link-primary">Zeu</a> 
+        | {date}
+      </p>
+      <a href={link} class="btn btn-primary">Github Repo</a>
+    </div>
+  </section>
+  <article class="mx-auto prose prose-md text-neutral-content prose-strong:text-base-100 prose-headings:text-neutral-content prose-a:text-secondary prose-blockquote:text-accent prose-code:text-primary lg:prose-lg w-full lg:max-w-5xl">
+    <slot />
+  </article>
+
+</BaseLayout>
