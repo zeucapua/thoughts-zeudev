@@ -10,10 +10,10 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title} | Thoughts by zeu.dev</title>
 	</head>
-	<body class="flex flex-col w-full h-full min-w-screen min-h-screen bg-neutral text-neutral-content">
+	<body class="flex flex-col w-full h-full min-w-screen min-h-screen bg-neutral font-inclusive tracking-wide text-neutral-content">
     <nav class="flex flex-row justify-between w-full h-fit p-4">
       <a href="/" class="btn btn-ghost normal-case text-2xl">thoughts.zeu.dev</a>
-      <a href="https://zeudev.vercel.app" class="btn btn-secondary">about</a>
+      <a href="https://zeu.dev" class="btn btn-secondary">about</a>
     </nav>
 
     <main class="flex flex-col w-full h-full p-8 gap-8 items-center">
@@ -21,3 +21,8 @@ const { title } = Astro.props;
     </main>
 	</body>
 </html>
+
+<style is:global>
+  @import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap');
+
+</style>
