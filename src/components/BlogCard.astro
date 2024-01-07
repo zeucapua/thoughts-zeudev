@@ -1,12 +1,11 @@
 ---
-import { CollectionEntry } from "astro:content";
+import type { CollectionEntry } from "astro:content";
 
 export interface Props {
   blog : CollectionEntry<'blog'>
 }
 
 const { blog } = Astro.props;
-console.log(blog.collection);
 
 const directory = blog.collection + "/";
 ---

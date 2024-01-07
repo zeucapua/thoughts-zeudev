@@ -6,10 +6,10 @@ const blog_collection = defineCollection({
     description: z.string(),
     date: z.string(),
     draft: z.boolean(),
-    link: z.string()
+    link: z.string().optional()
   })
 });
 
 export const collections = {
-  'blog': blog_collection
+  blog: blog_collection
 }

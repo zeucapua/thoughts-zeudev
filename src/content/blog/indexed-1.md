@@ -1,15 +1,14 @@
 ---
-title: "Svelte Web Development: This is HTML (Part 1)"
+title: "This is HTML"
 description: An overview on what HTML is and how to use them while making websites. Part 1 of the Svelte Web Development series.
-date: 09-23-2023
+date: 01-06-2024
 draft: true
-link: https://twitter.com/zeu_dev
 ---
 
 ## Elements, Tags, and the Properties Within
 
 HTML is the programming language used to layout the content inside a webpage. Writing in HTML involves using
-elements, also known as tags (throughout the series, I will be using these interchangebly), and putting them in order 
+elements, also known as tags (throughout the series, I will be using these interchangeably), and putting them in order 
 depending on your design.
 
 Most tags are used in twos, both with angle brackets with the type inside, with the ending tag's type starting 

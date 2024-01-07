@@ -16,10 +16,10 @@ const { title, description, date, link } = Astro.props;
         Written by <a href="https://zeudev.vercel.app" class="link-primary">Zeu</a> 
         | {date}
       </p>
-      <a href={link} class="btn btn-primary">Github Repo</a>
+      { link && <a href={link} class="btn btn-primary">Github Repo</a> }
     </div>
   </section>
-  <article class="mx-auto prose prose-md text-neutral-content prose-strong:text-base-100 prose-headings:text-neutral-content prose-a:text-secondary prose-blockquote:text-accent prose-code:text-primary lg:prose-lg w-full lg:max-w-5xl">
+  <article class="mx-auto prose prose-md text-white prose-strong:text-base-100 prose-headings:text-primary prose-a:text-secondary prose-blockquote:text-accent prose-code:text-accent lg:prose-lg w-full lg:max-w-5xl">
     <slot />
   </article>
 

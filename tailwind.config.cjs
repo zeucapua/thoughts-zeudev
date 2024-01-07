@@ -4,12 +4,12 @@ module.exports = {
 	theme: {
 		extend: {
       fontFamily: {
-        "inclusive": ["Inclusive Sans"]
+        inclusive: ["Inclusive Sans"]
       }
     },
 	},
   daisyui: {
-    themes: ["retro"]
+    themes: ["bumblebee"]
   },
 	plugins: [require("@tailwindcss/typography"), require("daisyui")],
 }
